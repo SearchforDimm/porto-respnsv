@@ -11,9 +11,6 @@ body {
 .container {
     background-color: #25316D;
     width: 80%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     margin-bottom: 100px;
     border-radius: 20px;
     display: flex;
@@ -72,4 +69,14 @@ body {
     background-color: #16213E;
     color: #fef5ac;
     text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        background-color: #101010;
+    }
+    .gambar, .biodata, .sosmed {
+        width: 100%;
+    }
 }
